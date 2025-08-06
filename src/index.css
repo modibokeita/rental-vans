@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  background-color: #FFF7ED;
+  color: #333;
+}
+
+/* Header Component styles */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+.site-logo{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #161616;
+}
+
+.nav-links{
+  display: flex;
+  gap: 1.5em;
+  font-size: 1.5rem;
+
+}
+
+.nav-links a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
+}
+
+/* Footer component styles */
+footer{
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+/* Home page styles */
+.home{
+  color: #fff;
+  background-image: url("./assets/images/home-hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+.home-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+}
+.home-banner h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.home-banner p{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.home-banner a{
+  background-color: #FF8C38;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.home-banner a:hover{
+  background-color: #e5670d;
+}
