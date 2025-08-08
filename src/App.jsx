@@ -9,6 +9,7 @@ import Income from "./pages/Host/Income"
 import Dashboard from "./pages/Host/Dashboard"
 import Reviews from "./pages/Host/Reviews"
 import HostVans from "./pages/Host/HostVans"
+import HostVanDetails from "./pages/Host/HostVanDetails"
 
 import "./server"
 
@@ -27,8 +28,9 @@ function App() {
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="reviews" element={<Reviews />} />
-            <Route path="hostvans" element={<HostVans />} />
             <Route path="income" element={<Income />} />
+            <Route path="vans" element={<HostVans />} />
+            <Route path="vans/:id" element={<HostVanDetails />} />
           </Route>
         </Route>
 
