@@ -14,14 +14,14 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
 }
 a{
   text-decoration: none;
   color: #333;
 }
 .site-logo{
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #161616;
 }
@@ -29,7 +29,7 @@ a{
 .nav-links{
   display: flex;
   gap: 1.5em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
 }
 
@@ -144,7 +144,66 @@ footer{
   font-size: 1.5rem;
   margin-bottom: 0.5em;
 }
+.van-list-container h1{
+  text-align: center;
+  margin: 1em 0;
+}
 .van-card p{
   font-size: 1.2rem;
   margin-bottom: 0.5em;
+}
+.van-detail-card img{
+  width: 100%;
+  height: 350px;
+
+}
+.van-detail-card{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1em;
+  padding: 1em;
+  /* max-width: 600px; */
+}
+.primary-button{
+  background-color: #FF8C38;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* Host layout styles */
+.host-layout-nav a{
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 1em 1em 0;
+}
+.host-layout-nav{
+  text-align: center;
+  margin: 2em 0;
+
+}
+/* host Dashboard styles */
+.host-layout-dashboard{
+  padding: 3em 1em;
+  text-align: center;
+}
+/* Host Income styles */
+
+.host-layout-income{
+  padding: 3em 1em;
+  text-align: center;
+}
+/* Host Reviews styles */
+.host-layout-reviews{
+  padding: 3em 1em;
+  text-align: center;
+}
+/* Host Vans styles */
+.host-layout-vans{
+  padding: 3em 1em;
+  text-align: center;
 }
