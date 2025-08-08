@@ -206,4 +206,25 @@ footer{
 .host-layout-vans{
   padding: 3em 1em;
   text-align: center;
+  
+}
+.host-van-card{
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+  margin-bottom: 2em;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+.host-van-card img{
+  width: 150px;
+}
+.host-van-card h2{
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+.host-van-card button{
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+
 }
