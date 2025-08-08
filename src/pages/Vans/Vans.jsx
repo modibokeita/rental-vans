@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Vans() {
   const [vans, setVans] = React.useState([])
@@ -22,18 +23,21 @@ export default function Vans() {
       borderRadius: '5px',
       cursor: 'pointer',
       fontWeight: 'bold',
+    
     }
     return (
-      <div key={van.id} className="van-card">
-        <img src={van.imageUrl} alt={`photo of ${van.name}`} />
-        <h2>{van.name}</h2>
-        <p><strong>${van.price}</strong>/day</p>
-        <button style={btnStyle}>{van.type}</button>
-      </div>
+      <Link to={van.id} key={van.id}>
+        <div className="van-card">
+          <img src={van.imageUrl} alt={`photo of ${van.name}`} />
+          <h2>{van.name}</h2>
+          <p><strong>${van.price}</strong>/day</p>
+          <button style={btnStyle}>{van.type}</button>
+        </div>
+      </Link>
     )
   })
   return (
-    <div>
+    <div className="van-list-container">
       <h1>Explore our van options</h1>
       <div className="van-list">
         {vanElements}
