@@ -228,3 +228,20 @@ footer{
   margin-bottom: 0.5em;
 
 }
+/* Host van details styles */
+.host-van-details{
+  padding: 3em 1em;
+  text-align: center;
+  background-color: #FFF;
+}
+.host-van-details-container img{
+  width: 150px;
+}
+.host-van-details-container{
+  display: flex;
+  gap: 0.5em;
+}
+.host-van-details-info h2{
+  font-size: 1rem;
+  margin: 1em;
+}
