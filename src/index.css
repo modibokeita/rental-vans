@@ -281,3 +281,96 @@ footer{
   font-size: 1.2rem;
   margin: 0.5em 0;
 }
+
+/* Responsive Design */
+
+@media (min-width: 768px) {
+  .van-card{
+    display: flex;
+    /* align-items: center; */
+    gap: 2em;
+    font-size: 2rem;
+  }
+  .van-list, .host-layout-vans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .host-layout-vans img, .van-card img{
+    width: 450px;
+  }
+  .host-van-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+  }
+  .host-van-details-container{
+    display: flex;
+    gap: 2em;
+    font-size: 1.5rem;
+
+  }
+  .host-van-details-navlink a{
+    font-size: 1.2rem;
+  
+  }
+  .host-van-details img{
+    width: 500px;
+  }
+  .host-van-details-info button{
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    width: 100%;
+  }
+  .van-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    /* justify-content: center; */
+  }
+  .van-card-info button{
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    font-weight: bold;
+  }
+  .van-card-info p{
+    font-size: 1.5rem;
+  }
+  .nav-links a{
+    font-size: 1.5rem;
+  }
+  .site-logo{
+    font-size: 2rem; 
+  font-weight: bold;
+  }
+  .back-button{
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+
+  }
+  .van-detail-card{
+     align-items: center;
+  }
+  .van-detail-card p{
+    font-size: 1.2rem;
+    max-width: 800px;
+  }
+  .van-detail-card button{
+    font-size: 1.5rem;
+    margin: 0 auto;
+
+  }
+  .van-detail-card img{
+   
+    height: 420px;
+    max-width: 800px;
+  }
+  .host-layout-nav a{
+    font-size: 1.5rem;
+    margin: 0 2em 1em 0;
+  }
+}

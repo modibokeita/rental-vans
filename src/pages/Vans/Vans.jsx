@@ -29,9 +29,11 @@ export default function Vans() {
       <Link to={van.id} key={van.id}>
         <div className="van-card">
           <img src={van.imageUrl} alt={`photo of ${van.name}`} />
-          <h2>{van.name}</h2>
-          <p><strong>${van.price}</strong>/day</p>
-          <button style={btnStyle}>{van.type}</button>
+          <div className="van-card-info">
+            <h2>{van.name}</h2>
+            <p><strong>${van.price}</strong>/day</p>
+            <button style={btnStyle}>{van.type}</button>
+          </div>
         </div>
       </Link>
     )
