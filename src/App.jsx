@@ -10,6 +10,9 @@ import Dashboard from "./pages/Host/Dashboard"
 import Reviews from "./pages/Host/Reviews"
 import HostVans from "./pages/Host/HostVans"
 import HostVanDetails from "./pages/Host/HostVanDetails"
+import Details from "./pages/Host/Details"
+import Pricing from "./pages/Host/Pricing"
+import Photos from "./pages/Host/Photos"
 
 import "./server"
 
@@ -30,10 +33,15 @@ function App() {
             <Route path="reviews" element={<Reviews />} />
             <Route path="income" element={<Income />} />
             <Route path="vans" element={<HostVans />} />
-            <Route path="vans/:id" element={<HostVanDetails />} />
+
+            <Route path="vans/:id" element={<HostVanDetails />}>
+              <Route index element={<Details />} />
+              <Route path="pricing" element={<Pricing />} />
+              <Route path="photos" element={<Photos />} />
+            </Route>
           </Route>
         </Route>
-
+    
       </Routes>
     </BrowserRouter>
   )

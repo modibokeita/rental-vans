@@ -245,3 +245,39 @@ footer{
   font-size: 1rem;
   margin: 1em;
 }
+.host-van-details-navlink{
+  padding: 2em 0 0;
+  text-align: left;
+}
+/* Details component syles */
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 0;
+  text-align: left;
+}
+.details p{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+/* Photos component styles */
+.photos{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 0;
+}
+.photos img{
+  width: 100%;
+
+}
+/* Pricing component styles */
+.pricing{
+  text-align: left;
+  padding: 1.5em 0;
+}
+.pricing p{
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+}
